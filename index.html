@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tamil Nadu-Based Coffee Co. - Awaken Your Senses, Elevate Your Day. Explore our handpicked selection of premium coffees, expertly roasted and sustainably sourced.">
+  <title>Tamil Nadu-Based Coffee Co. | Premium Specialty Coffee</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Google Fonts for Elegant Serif and Premium Sans-Serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons CDN for clean premium icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar & Actions -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="announcement">
+        <div class="announcement-marquee">
+          <div class="announcement-track">
+            <div class="announcement-group">
+              <span class="announcement-item">FREE SHIPPING ON ORDERS OVER $40</span>
+              <span class="announcement-divider">&bull;</span>
+              <span class="announcement-item">SAVE 15% ON YOUR FIRST 5 SUBSCRIPTION SHIPMENTS WITH CODE Tamil1500</span>
+              <span class="announcement-divider">&bull;</span>
+            </div>
+            <div class="announcement-group">
+              <span class="announcement-item">FREE SHIPPING ON ORDERS OVER $40</span>
+              <span class="announcement-divider">&bull;</span>
+              <span class="announcement-item">SAVE 15% ON YOUR FIRST 5 SUBSCRIPTION SHIPMENTS WITH CODE Tamil1500</span>
+              <span class="announcement-divider">&bull;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top-actions">
+        <a href="#" class="top-action-link" id="search-trigger" aria-label="Search Collection">
+          <i data-lucide="search"></i>
+          <span>Search</span>
+        </a>
+        <a href="#" class="top-action-link" aria-label="My Account">
+          <i data-lucide="user"></i>
+          <span>Account</span>
+        </a>
+        <a href="#" class="top-action-link" id="cart-btn" aria-label="Shopping Cart">
+          <i data-lucide="shopping-bag"></i>
+          <span>Cart (<span id="cart-count">0</span>)</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="main-header">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo" aria-label="Tamil Nadu-Based Coffee Co. Home">
+        <div class="logo-icon">
+          <svg viewBox="0 0 100 100" class="coffee-bean-logo">
+            <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="2" fill="none" />
+            <!-- Leaf/Coffee Bean outline inside -->
+            <path d="M50,15 C65,30 65,70 50,85 C35,70 35,30 50,15 Z" stroke="currentColor" stroke-width="2" fill="none" />
+            <path d="M50,15 C50,45 42,52 38,62" stroke="currentColor" stroke-width="2" fill="none" />
+            <path d="M50,85 C50,55 58,48 62,38" stroke="currentColor" stroke-width="2" fill="none" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">TAMIL NADU-BASED</span>
+          <span class="brand-sub">COFFEE CO.</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="navbar" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link active">HOME</a></li>
+          <li><a href="#" class="nav-link">SHOP</a></li>
+          <li><a href="#" class="nav-link">OUR STORY</a></li>
+          <li><a href="#" class="nav-link">BLOG</a></li>
+          <li><a href="#" class="nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Placeholder for spacing header symmetry on desktop -->
+      <div class="header-spacer-right"></div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      <!-- Hero Text Column -->
+      <div class="hero-content">
+        <span class="hero-subtitle">PREMIUM COFFEE</span>
+        <h1 class="hero-title">
+          Awaken Your Senses<br>
+          <span class="gold-text">Elevate Your Day</span>
+        </h1>
+        <p class="hero-description">
+          Discover the perfect balance of rich flavors and aromas, crafted from the world's finest beans.
+        </p>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-filled">SHOP COLLECTION</a>
+          <a href="#" class="btn btn-outlined">LEARN MORE</a>
+        </div>
+        
+        <!-- Slider Pagination -->
+        <div class="hero-pagination">
+          <span class="pagination-num">01</span>
+          <div class="pagination-line-container">
+            <div class="pagination-line-active" id="hero-progress"></div>
+          </div>
+          <span class="pagination-num">04</span>
+        </div>
+      </div>
+
+      <!-- Hero Image Column -->
+      <div class="hero-gallery">
+        <div class="hero-image-wrapper">
+          <div class="hero-image-track" id="hero-image-track">
+            <div class="hero-image-slide-container">
+              <img src="images/hero image/imgi_145_coffee640.jpg" alt="Tamil Nadu-Based Premium Coffee - Freshly Brewed" class="hero-image-slide">
+            </div>
+            <div class="hero-image-slide-container">
+              <img src="images/hero image/imgi_150_53d6fac5-34ae-48dc-9783-79852170b41d.jpg" alt="Tamil Nadu-Based Specialty Coffee - Expertly Roasted" class="hero-image-slide">
+            </div>
+            <div class="hero-image-slide-container">
+              <img src="images/hero image/imgi_166_cup-of-coffee.jpg" alt="Tamil Nadu-Based Coffee - Sustainable Sourcing" class="hero-image-slide">
+            </div>
+            <div class="hero-image-slide-container">
+              <img src="images/hero image/imgi_183_nathan-dumlao-vbt-Fp3b5FA-unsplash-scaled.jpg" alt="Premium South Indian filter coffee blend" class="hero-image-slide">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slider Directional Arrows -->
+        <div class="slider-arrows">
+          <button class="arrow-btn" id="hero-prev" aria-label="Previous Slide">
+            <i data-lucide="chevron-left"></i>
+          </button>
+          <button class="arrow-btn" id="hero-next" aria-label="Next Slide">
+            <i data-lucide="chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Row -->
+  <section class="features-section">
+    <!-- <div class="features-marquee"> -->
+      <!-- <div class="features-track"> -->
+        <!-- First group -->
+        <!-- <div class="features-group"> -->
+          <!-- Feature 1 -->
+          <!-- <div class="feature-item">
+            <div class="feature-icon-wrapper">
+              <i data-lucide="leaf"></i>
+            </div>
+            <div class="feature-text">
+              <h3 class="feature-title">PREMIUM QUALITY</h3>
+              <p class="feature-desc">Sourced from the world's finest coffee regions.</p>
+            </div>
+          </div> -->
+          <!-- Feature 2 -->
+          <!-- <div class="feature-item">
+            <div class="feature-icon-wrapper">
+              <i data-lucide="coffee"></i>
+            </div>
+            <div class="feature-text">
+              <h3 class="feature-title">EXPERT ROASTED</h3>
+              <p class="feature-desc">Perfectly roasted to bring out unique flavors and aromas.</p>
+            </div>
+          </div> -->
+          <!-- Feature 3 -->
+          <!-- <div class="feature-item">
+            <div class="feature-icon-wrapper">
+              <i data-lucide="sprout"></i>
+            </div>
+            <div class="feature-text">
+              <h3 class="feature-title">SUSTAINABLE SOURCED</h3>
+              <p class="feature-desc">Ethically sourced with care for people and planet.</p>
+            </div>
+          </div> -->
+          <!-- Feature 4 -->
+          <!-- <div class="feature-item">
+            <div class="feature-icon-wrapper">
+              <i data-lucide="truck"></i>
+            </div>
+            <div class="feature-text">
+              <h3 class="feature-title">FAST DELIVERY</h3>
+              <p class="feature-desc">Fresh coffee delivered straight to your door.</p>
+            </div>
+          </div>
+        </div> -->
+        <!-- Second group (Duplicate for loop) -->
+        <!-- <div class="features-group"> -->
+          <!-- Feature 1 -->
+          <!-- <div class="feature-item">
+            <div class="feature-icon-wrapper">
+              <i data-lucide="leaf"></i>
+            </div>
+            <div class="feature-text">
+              <h3 class="feature-title">PREMIUM QUALITY</h3>
+              <p class="feature-desc">Sourced from the world's finest coffee regions.</p>
+            </div>
+          </div> -->
+          <!-- Feature 2 -->
+          <!-- <div class="feature-item">
+            <div class="feature-icon-wrapper">
+              <i data-lucide="coffee"></i>
+            </div>
+            <div class="feature-text">
+              <h3 class="feature-title">EXPERT ROASTED</h3>
+              <p class="feature-desc">Perfectly roasted to bring out unique flavors and aromas.</p>
+            </div>
+          </div> -->
+          <!-- Feature 3 -->
+          <!-- <div class="feature-item">
+            <div class="feature-icon-wrapper">
+              <i data-lucide="sprout"></i>
+            </div>
+            <div class="feature-text">
+              <h3 class="feature-title">SUSTAINABLE SOURCED</h3>
+              <p class="feature-desc">Ethically sourced with care for people and planet.</p>
+            </div>
+          </div> -->
+          <!-- Feature 4 -->
+          <!-- <div class="feature-item">
+            <div class="feature-icon-wrapper">
+              <i data-lucide="truck"></i>
+            </div>
+            <div class="feature-text">
+              <h3 class="feature-title">FAST DELIVERY</h3>
+              <p class="feature-desc">Fresh coffee delivered straight to your door.</p>
+            </div>
+          </div>
+        </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  </section>
+
+  <!-- Brand Story / About Section -->
+  <section class="about-section" id="about">
+    <div class="container about-container">
+      <div class="about-content">
+        <span class="section-subtitle">OUR STORY</span>
+        <h2 class="section-title cormorant-title">
+          Brewing Tamil Nadu's Heritage <br>
+          <span class="gold-text">With Global Standards</span>
+        </h2>
+        <div class="divider-gold"></div>
+        <p class="about-text">
+          Deep in the misty peaks of the Western Ghats, where wild orchids bloom and the air is scented with cardamom, lies the birthplace of our exceptional beans. Tamil Nadu-Based Coffee Co. was born out of a passion to honor the century-old South Indian filter coffee tradition while introducing Single Origin coffees that rival the world's best.
+        </p>
+        <p class="about-text">
+          We collaborate directly with small-holder estate owners in Valparai, the Nilgiris, and Shevaroys, ensuring fair pay and sustainable practices. Each bean is slowly roasted to order in our state-of-the-art facility, unlocking complex profiles of chocolate, spices, and bright citrus.
+        </p>
+        <div class="about-signature">
+          <div class="signature-icon">
+            <svg viewBox="0 0 100 100" class="signature-logo">
+              <path d="M10,50 Q40,90 90,50" stroke="#c89f65" stroke-width="2" fill="none"/>
+              <path d="M30,30 C50,10 70,90 90,70" stroke="#c89f65" stroke-width="1.5" fill="none"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="signature-name">Master Roaster & Founder</h4>
+            <p class="signature-title">Tamil Nadu-Based Coffee Co.</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="visual-stack">
+          <div class="visual-img-container main-img">
+            <img src="images/hero.png" alt="Tamil Nadu-Based Coffee premium roasting craftsmanship" class="visual-img">
+          </div>
+          <div class="visual-img-container sub-img">
+            <img src="images/hero image/imgi_145_coffee640.jpg" alt="Freshly roasted specialty coffee beans close-up" class="visual-img">
+          </div>
+          <div class="gold-accent-box"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us / USP Section -->
+  <section class="usp-section" id="why-choose-us">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">WHY CHOOSE US</span>
+        <h2 class="section-title cormorant-title text-light">Cultivating Excellence, From Farm To Cup</h2>
+        <div class="divider-gold center"></div>
+      </div>
+      
+      <div class="usp-grid">
+        <!-- Card 1 -->
+        <div class="usp-card">
+          <div class="usp-icon">
+            <i data-lucide="map-pin"></i>
+          </div>
+          <h3 class="usp-title">Shade-Grown in Western Ghats</h3>
+          <p class="usp-desc">Our beans grow slowly under a canopy of native forest trees, developing complex, naturally sweet flavors.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="usp-card">
+          <div class="usp-icon">
+            <i data-lucide="flame"></i>
+          </div>
+          <h3 class="usp-title">Artisanal Micro-Roasting</h3>
+          <p class="usp-desc">Roasted in small batches with strict sensory profiling, maximizing the unique terroir of each estate.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="usp-card">
+          <div class="usp-icon">
+            <i data-lucide="handshake"></i>
+          </div>
+          <h3 class="usp-title">100% Direct Trade</h3>
+          <p class="usp-desc">We cut out middlemen to pay our growers up to 50% above fair-trade prices, supporting local livelihoods.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="usp-card">
+          <div class="usp-icon">
+            <i data-lucide="package-check"></i>
+          </div>
+          <h3 class="usp-title">Eco-Fresh Valve Bags</h3>
+          <p class="usp-desc">Packaged in plastic-free, compostable bags that block light and moisture to lock in freshness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Collection Section -->
+  <section class="collection-section">
+    <div class="container collection-grid">
+      <!-- Intro Column (Left) -->
+      <div class="collection-intro">
+        <!-- Botanical leaf SVG background line art -->
+        <div class="botanical-bg">
+          <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="0.75" class="leaf-svg">
+            <path d="M100,180 C95,140 70,120 60,90 C50,60 70,40 100,20 C130,40 150,60 140,90 C130,120 105,140 100,180 Z" />
+            <path d="M100,180 L100,20" />
+            <path d="M100,150 C85,135 80,120 70,115" />
+            <path d="M100,130 C115,115 120,100 130,95" />
+            <path d="M100,110 C85,95 80,80 70,75" />
+            <path d="M100,90 C115,75 120,60 130,55" />
+            <path d="M100,70 C88,58 84,48 76,44" />
+          </svg>
+        </div>
+
+        <span class="collection-subtitle">OUR COLLECTION</span>
+        <h2 class="collection-title">
+          Exceptional Coffees,<br>
+          Extraordinary Moments
+        </h2>
+        <p class="collection-description">
+          Explore our handpicked selection of premium coffees, crafted for true connoisseurs.
+        </p>
+        <a href="#" class="btn btn-dark-filled">VIEW ALL COFFEES</a>
+      </div>
+
+      <!-- Products Column Grid (Right) -->
+      <div class="products-grid">
+        <!-- Card 1: Ethiopia Yirgacheffe -->
+        <article class="product-card">
+          <div class="product-img-wrapper">
+            <img src="images/ethiopia.png" alt="Black minimal Tamil Nadu-Based Coffee bag mockup of Ethiopia Yirgacheffe specialty coffee" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">SINGLE ORIGIN</span>
+            <h3 class="product-name">Ethiopia Yirgacheffe</h3>
+            <p class="product-profile">Floral &bull; Citrus &bull; Bright</p>
+            <div class="product-footer">
+              <span class="product-price">$18.00</span>
+              <button class="add-to-cart" aria-label="Add Ethiopia Yirgacheffe to Cart" data-name="Ethiopia Yirgacheffe" data-price="18.00">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Colombia Supremo -->
+        <article class="product-card">
+          <div class="product-img-wrapper">
+            <img src="images/colombia.png" alt="Brown minimal Tamil Nadu-Based Coffee bag mockup of Colombia Supremo specialty coffee" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">SINGLE ORIGIN</span>
+            <h3 class="product-name">Colombia Supremo</h3>
+            <p class="product-profile">Caramel &bull; Nutty &bull; Smooth</p>
+            <div class="product-footer">
+              <span class="product-price">$17.00</span>
+              <button class="add-to-cart" aria-label="Add Colombia Supremo to Cart" data-name="Colombia Supremo" data-price="17.00">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: House Blend -->
+        <article class="product-card">
+          <div class="product-img-wrapper">
+            <img src="images/house_blend.png" alt="Dark grey minimal Tamil Nadu-Based Coffee bag mockup of House Blend specialty coffee" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">BLEND</span>
+            <h3 class="product-name">House Blend</h3>
+            <p class="product-profile">Chocolate &bull; Balanced &bull; Rich</p>
+            <div class="product-footer">
+              <span class="product-price">$16.00</span>
+              <button class="add-to-cart" aria-label="Add House Blend to Cart" data-name="House Blend" data-price="16.00">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: Swiss Water Decaf -->
+        <article class="product-card">
+          <div class="product-img-wrapper">
+            <img src="images/decaf.png" alt="Dark green minimal Tamil Nadu-Based Coffee bag mockup of Swiss Water Decaf specialty coffee" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">DECAF</span>
+            <h3 class="product-name">Swiss Water Decaf</h3>
+            <p class="product-profile">Mellow &bull; Clean &bull; Smooth</p>
+            <div class="product-footer">
+              <span class="product-price">$17.00</span>
+              <button class="add-to-cart" aria-label="Add Swiss Water Decaf to Cart" data-name="Swiss Water Decaf" data-price="17.00">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5: Nilgiri Hills Premium -->
+        <article class="product-card">
+          <div class="product-img-wrapper">
+            <img src="images/product image/imgi_300_images.jpg" alt="Mockup of Nilgiri Hills Premium coffee bag from Tamil Nadu-Based Coffee Co" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">SINGLE ORIGIN</span>
+            <h3 class="product-name">Nilgiri Hills Premium</h3>
+            <p class="product-profile">Cardamom &bull; Floral &bull; Smooth</p>
+            <div class="product-footer">
+              <span class="product-price">$19.00</span>
+              <button class="add-to-cart" aria-label="Add Nilgiri Hills Premium to Cart" data-name="Nilgiri Hills Premium" data-price="19.00">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6: South Indian Filter Blend -->
+        <article class="product-card">
+          <div class="product-img-wrapper">
+            <img src="images/product image/imgi_305_images.jpg" alt="Mockup of South Indian Filter Blend coffee bag from Tamil Nadu-Based Coffee Co" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">SIGNATURE BLEND</span>
+            <h3 class="product-name">South Indian Filter Blend</h3>
+            <p class="product-profile">Chicory &bull; Strong &bull; Velvety</p>
+            <div class="product-footer">
+              <span class="product-price">$16.50</span>
+              <button class="add-to-cart" aria-label="Add South Indian Filter Blend to Cart" data-name="South Indian Filter Blend" data-price="16.50">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 7: Classic Coffee Mix -->
+        <article class="product-card">
+          <div class="product-img-wrapper">
+            <img src="images/product image/imgi_451_Classic-Coffee-Mix.png" alt="Mockup of Classic Coffee Mix pack from Tamil Nadu-Based Coffee Co" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">INSTANT MIX</span>
+            <h3 class="product-name">Classic Coffee Mix</h3>
+            <p class="product-profile">Creamy &bull; Sweet &bull; Roasted</p>
+            <div class="product-footer">
+              <span class="product-price">$14.00</span>
+              <button class="add-to-cart" aria-label="Add Classic Coffee Mix to Cart" data-name="Classic Coffee Mix" data-price="14.00">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 8: Valparai Estate Dark -->
+        <article class="product-card">
+          <div class="product-img-wrapper">
+            <img src="images/product image/imgi_328_images.jpg" alt="Mockup of Valparai Estate Dark coffee bag from Tamil Nadu-Based Coffee Co" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">SINGLE ORIGIN</span>
+            <h3 class="product-name">Valparai Estate Dark</h3>
+            <p class="product-profile">Dark Chocolate &bull; Bold &bull; Full-bodied</p>
+            <div class="product-footer">
+              <span class="product-price">$20.00</span>
+              <button class="add-to-cart" aria-label="Add Valparai Estate Dark to Cart" data-name="Valparai Estate Dark" data-price="20.00">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 9: Mysore Nuggets Extra Bold -->
+        <article class="product-card">
+          <div class="product-img-wrapper">
+            <img src="images/product image/img1.jpg" alt="Mysore Nuggets Extra Bold coffee beans pack" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">SINGLE ORIGIN</span>
+            <h3 class="product-name">Mysore Nuggets Extra Bold</h3>
+            <p class="product-profile">Caramel &bull; Citrus &bull; Spiced</p>
+            <div class="product-footer">
+              <span class="product-price">$21.00</span>
+              <button class="add-to-cart" aria-label="Add Mysore Nuggets Extra Bold to Cart" data-name="Mysore Nuggets Extra Bold" data-price="21.00">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 10: Malabar Monsoon AA -->
+        <article class="product-card">
+          <div class="product-img-wrapper">
+            <img src="images/product image/img2.jpg" alt="Malabar Monsoon AA aged coffee bag" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">SINGLE ORIGIN</span>
+            <h3 class="product-name">Malabar Monsoon AA</h3>
+            <p class="product-profile">Earthy &bull; Spicy &bull; Low Acid</p>
+            <div class="product-footer">
+              <span class="product-price">$18.50</span>
+              <button class="add-to-cart" aria-label="Add Malabar Monsoon AA to Cart" data-name="Malabar Monsoon AA" data-price="18.50">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 11: Araku Valley Organic -->
+        <article class="product-card">
+          <div class="product-img-wrapper">
+            <img src="images/product image/img3.jpg" alt="Araku Valley Organic premium coffee" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">ORGANIC</span>
+            <h3 class="product-name">Araku Valley Organic</h3>
+            <p class="product-profile">Chocolate &bull; Honey &bull; Rich</p>
+            <div class="product-footer">
+              <span class="product-price">$22.00</span>
+              <button class="add-to-cart" aria-label="Add Araku Valley Organic to Cart" data-name="Araku Valley Organic" data-price="22.00">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 12: Shevaroys Golden Roast -->
+        <article class="product-card">
+          <div class="product-img-wrapper">
+            <img src="images/product image/img4.jpg" alt="Shevaroys Golden Roast premium blend" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">SIGNATURE BLEND</span>
+            <h3 class="product-name">Shevaroys Golden Roast</h3>
+            <p class="product-profile">Nutty &bull; Sweet &bull; Smooth</p>
+            <div class="product-footer">
+              <span class="product-price">$17.50</span>
+              <button class="add-to-cart" aria-label="Add Shevaroys Golden Roast to Cart" data-name="Shevaroys Golden Roast" data-price="17.50">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 13: Anamalai Espresso Blend -->
+        <article class="product-card">
+          <div class="product-img-wrapper">
+            <img src="images/product image/img5.jpg" alt="Anamalai Espresso Blend bold dark roast" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">ESPRESSO</span>
+            <h3 class="product-name">Anamalai Espresso Blend</h3>
+            <p class="product-profile">Dark Cocoa &bull; Creamy &bull; Bold</p>
+            <div class="product-footer">
+              <span class="product-price">$19.50</span>
+              <button class="add-to-cart" aria-label="Add Anamalai Espresso Blend to Cart" data-name="Anamalai Espresso Blend" data-price="19.50">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 14: Cardamom Infused Coffee -->
+        <article class="product-card">
+          <div class="product-img-wrapper">
+            <img src="images/product image/img6.png" alt="Cardamom Infused spiced coffee" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">FLAVORED</span>
+            <h3 class="product-name">Cardamom Infused Coffee</h3>
+            <p class="product-profile">Spiced &bull; Sweet &bull; Aromatic</p>
+            <div class="product-footer">
+              <span class="product-price">$16.00</span>
+              <button class="add-to-cart" aria-label="Add Cardamom Infused Coffee to Cart" data-name="Cardamom Infused Coffee" data-price="16.00">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 15: Coorg Peaberry Special -->
+        <article class="product-card">
+          <div class="product-img-wrapper">
+            <img src="images/product image/img7.jpg" alt="Coorg Peaberry Special coffee bag" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">PEABERRY</span>
+            <h3 class="product-name">Coorg Peaberry Special</h3>
+            <p class="product-profile">Fruity &bull; Balanced &bull; Bright</p>
+            <div class="product-footer">
+              <span class="product-price">$20.50</span>
+              <button class="add-to-cart" aria-label="Add Coorg Peaberry Special to Cart" data-name="Coorg Peaberry Special" data-price="20.50">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ice Coffee Banner & Carousel (Autoplay without controls) -->
+  <!-- <section class="ice-carousel-section" id="ice-carousel">
+    <div class="ice-carousel-container">
+      <div class="ice-carousel-track" id="ice-carousel-track">
+        <div class="ice-carousel-slide">
+          <img src="images/ice product image/ice1.jpg" alt="Cold Brew Coffee over ice cubes" class="ice-carousel-img">
+          <div class="ice-carousel-caption">
+            <span class="ice-tag">SIGNATURE COLD BREW</span>
+            <h2 class="ice-title cormorant-title">Slow Dripped, Cold Steeped</h2>
+            <p class="ice-desc">Steeped for 18 hours in mountain water to extract natural cacao tones and zero bitterness.</p>
+          </div>
+        </div>
+        <div class="ice-carousel-slide">
+          <img src="images/ice product image/ice2.jpg" alt="Rich iced latte pour" class="ice-carousel-img">
+          <div class="ice-carousel-caption">
+            <span class="ice-tag">ICED LATTES</span>
+            <h2 class="ice-title cormorant-title">Velvety Espresso, Chilled Milk</h2>
+            <p class="ice-desc">Our double-shot house espresso combined with fresh chilled dairy or organic oat milk over crystal ice.</p>
+          </div>
+        </div>
+        <div class="ice-carousel-slide">
+          <img src="images/ice product image/ice3.jpg" alt="Frothy sweet cream cold brew" class="ice-carousel-img">
+          <div class="ice-carousel-caption">
+            <span class="ice-tag">AFFOGATOS & FRAPPÉS</span>
+            <h2 class="ice-title cormorant-title">Indulgent Coffee Treats</h2>
+            <p class="ice-desc">Decadent single origin pours paired with premium vanilla bean ice cream and fine spices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Ice Coffee Collection Section (Secondary Products Grid) -->
+  <section class="ice-collection-section" id="ice-coffee-menu">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">THE ICE MENU</span>
+        <h2 class="section-title cormorant-title text-light">Chill Out With Our Premium Ice Coffee Range</h2>
+        <div class="divider-gold center"></div>
+      </div>
+
+      <div class="products-grid ice-grid">
+        <!-- Card 1 -->
+        <article class="product-card ice-card">
+          <div class="product-img-wrapper">
+            <img src="images/ice product image/imgi_103_images (1).jpg" alt="Classic Iced Filter Coffee" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">TRADITIONAL</span>
+            <h3 class="product-name">Classic Iced Filter Coffee</h3>
+            <p class="product-profile">Chicory Blend &bull; Creamy &bull; Sweet</p>
+            <div class="product-footer">
+              <span class="product-price">$6.50</span>
+              <button class="add-to-cart" aria-label="Add Classic Iced Filter Coffee to Cart" data-name="Classic Iced Filter Coffee" data-price="6.50">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="product-card ice-card">
+          <div class="product-img-wrapper">
+            <img src="images/ice product image/imgi_212_68ee111e787fb609483196-efb84760c3d66a8950af149e6f84a84755527be4.jpg" alt="Nitro Cardamom Cold Brew" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">NITRO COLD BREW</span>
+            <h3 class="product-name">Nitro Cardamom Cold Brew</h3>
+            <p class="product-profile">Infused Spices &bull; Creamy Head &bull; Smooth</p>
+            <div class="product-footer">
+              <span class="product-price">$7.50</span>
+              <button class="add-to-cart" aria-label="Add Nitro Cardamom Cold Brew to Cart" data-name="Nitro Cardamom Cold Brew" data-price="7.50">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="product-card ice-card">
+          <div class="product-img-wrapper">
+            <img src="images/ice product image/imgi_218_4711476616454.jpg" alt="Shakerato Gold" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">SHAKEN</span>
+            <h3 class="product-name">Shakerato Gold</h3>
+            <p class="product-profile">Double Espresso &bull; Citrus Zest &bull; Frothy</p>
+            <div class="product-footer">
+              <span class="product-price">$6.00</span>
+              <button class="add-to-cart" aria-label="Add Shakerato Gold to Cart" data-name="Shakerato Gold" data-price="6.00">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="product-card ice-card">
+          <div class="product-img-wrapper">
+            <img src="images/ice product image/imgi_238_images.jpg" alt="Coconut Cream Iced Latte" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">SPECIALTY</span>
+            <h3 class="product-name">Coconut Cream Iced Latte</h3>
+            <p class="product-profile">Espresso &bull; Coconut Milk &bull; Nutty</p>
+            <div class="product-footer">
+              <span class="product-price">$7.00</span>
+              <button class="add-to-cart" aria-label="Add Coconut Cream Iced Latte to Cart" data-name="Coconut Cream Iced Latte" data-price="7.00">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="product-card ice-card">
+          <div class="product-img-wrapper">
+            <img src="images/ice product image/imgi_248_4fd677f3-5069-4c61-a5af-90515170be42.jpg" alt="Spiced Iced Americano" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">CLASSIC</span>
+            <h3 class="product-name">Spiced Iced Americano</h3>
+            <p class="product-profile">Espresso &bull; Cinnamon Dust &bull; Clean</p>
+            <div class="product-footer">
+              <span class="product-price">$5.50</span>
+              <button class="add-to-cart" aria-label="Add Spiced Iced Americano to Cart" data-name="Spiced Iced Americano" data-price="5.50">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="product-card ice-card">
+          <div class="product-img-wrapper">
+            <img src="images/ice product image/imgi_297_images.jpg" alt="Vanilla Bean Cold Foam Brew" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">COLD BREW</span>
+            <h3 class="product-name">Vanilla Bean Cold Foam Brew</h3>
+            <p class="product-profile">Sweet Cream Foam &bull; Smooth &bull; Rich</p>
+            <div class="product-footer">
+              <span class="product-price">$8.00</span>
+              <button class="add-to-cart" aria-label="Add Vanilla Bean Cold Foam Brew to Cart" data-name="Vanilla Bean Cold Foam Brew" data-price="8.00">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="product-card ice-card">
+          <div class="product-img-wrapper">
+            <img src="images/ice product image/imgi_30_images.jpg" alt="Mocha Frappé Supreme" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">BLENDED</span>
+            <h3 class="product-name">Mocha Frappé Supreme</h3>
+            <p class="product-profile">Blended Espresso &bull; Dark Cocoa &bull; Cream</p>
+            <div class="product-footer">
+              <span class="product-price">$7.50</span>
+              <button class="add-to-cart" aria-label="Add Mocha Frappé Supreme to Cart" data-name="Mocha Frappé Supreme" data-price="7.50">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="product-card ice-card">
+          <div class="product-img-wrapper">
+            <img src="images/ice product image/imgi_322_images.jpg" alt="Affogato Al Caffè" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">DESSERT COFFEE</span>
+            <h3 class="product-name">Affogato Al Caffè</h3>
+            <p class="product-profile">Espresso &bull; Vanilla Gelato &bull; Rich</p>
+            <div class="product-footer">
+              <span class="product-price">$8.50</span>
+              <button class="add-to-cart" aria-label="Add Affogato Al Caffè to Cart" data-name="Affogato Al Caffè" data-price="8.50">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 9 -->
+        <article class="product-card ice-card">
+          <div class="product-img-wrapper">
+            <img src="images/ice product image/imgi_323_images.jpg" alt="Iced Rose Latte" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">FLORAL SIPS</span>
+            <h3 class="product-name">Iced Rose Latte</h3>
+            <p class="product-profile">Rose Infusion &bull; Sweet Milk &bull; Espresso</p>
+            <div class="product-footer">
+              <span class="product-price">$7.00</span>
+              <button class="add-to-cart" aria-label="Add Iced Rose Latte to Cart" data-name="Iced Rose Latte" data-price="7.00">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 10 -->
+        <article class="product-card ice-card">
+          <div class="product-img-wrapper">
+            <img src="images/ice product image/imgi_350_images.jpg" alt="Signature Sea Salt Cold Brew" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">COLD BREW</span>
+            <h3 class="product-name">Signature Sea Salt Cold Brew</h3>
+            <p class="product-profile">Salty Sweet Cream &bull; Dark Roast Brew</p>
+            <div class="product-footer">
+              <span class="product-price">$7.50</span>
+              <button class="add-to-cart" aria-label="Add Signature Sea Salt Cold Brew to Cart" data-name="Signature Sea Salt Cold Brew" data-price="7.50">
+                <i data-lucide="plus"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Testimonials Section -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">TESTIMONIALS</span>
+        <h2 class="section-title cormorant-title text-dark">What Our Coffee Connoisseurs Say</h2>
+        <div class="divider-gold center"></div>
+      </div>
+      
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <div class="stars">
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+          </div>
+          <p class="testimonial-quote">"The South Indian Filter Blend brought back childhood memories of Chennai mornings. The aroma is heavenly and the Chicory ratio is absolutely perfect. Truly an authentic experience!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AM</div>
+            <div class="author-details">
+              <h4 class="author-name">Anand Mahadevan</h4>
+              <p class="author-desc">Verified Buyer &bull; Bengaluru</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <div class="stars">
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+          </div>
+          <p class="testimonial-quote">"I'm a self-proclaimed coffee snob, and the Single Origin Nilgiri Hills is one of the brightest, cleanest coffees I've tasted this year. Complex cardamom notes and super smooth finish."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">PZ</div>
+            <div class="author-details">
+              <h4 class="author-name">Priya Zachariah</h4>
+              <p class="author-desc">Coffee Roaster &bull; Coimbatore</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div class="stars">
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+          </div>
+          <p class="testimonial-quote">"The Nitro Cardamom Cold Brew is pure magic. It's thick, creamy, has a velvet head, and the sweet herbal spice of cardamom is perfectly balanced. I buy it by the pack every week!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RK</div>
+            <div class="author-details">
+              <h4 class="author-name">Rohan Krishnan</h4>
+              <p class="author-desc">Verified Buyer &bull; Chennai</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section (Accordion Style) -->
+  <section class="faq-section" id="faq">
+    <div class="container faq-container">
+      <div class="faq-intro">
+        <span class="section-subtitle">FAQ</span>
+        <h2 class="section-title cormorant-title">Frequently Asked Questions</h2>
+        <div class="divider-gold"></div>
+        <p class="faq-desc-text">Have questions about our single-origin coffees, brewing methods, or subscriptions? Find quick answers here, or reach out to our support team.</p>
+        <a href="#" class="btn btn-outlined">CONTACT SUPPORT</a>
+      </div>
+
+      <div class="faq-accordions">
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span>How do you source your coffee beans?</span>
+            <i data-lucide="plus" class="faq-icon"></i>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-content-inner">
+              <p>We source our beans through 100% direct trade relationships with estates in the Nilgiri Hills, Valparai, and Shevaroys in Tamil Nadu. We visit the farms personally, verify their environmental practices, and pay premium rates directly to the farmers, ensuring absolute transparency and quality.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span>What makes South Indian Filter Coffee unique?</span>
+            <i data-lucide="plus" class="faq-icon"></i>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-content-inner">
+              <p>Traditional South Indian Filter Coffee blends dark roasted coffee beans with high-quality chicory (usually around 15% to 30%). The chicory gives the brew a rich, heavy body, a unique earthy aroma, and a bittersweet profile that pairs beautifully with frothed hot milk and sugar.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span>How does the coffee subscription work?</span>
+            <i data-lucide="plus" class="faq-icon"></i>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-content-inner">
+              <p>With our subscription, you choose your favorite blends or single origins, set the delivery frequency (weekly, bi-weekly, or monthly), and choose whether you want whole beans or custom grind sizes. You save 15% on your first 5 shipments and can pause or cancel anytime through your account dashboard.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span>What is your roasting schedule?</span>
+            <i data-lucide="plus" class="faq-icon"></i>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-content-inner">
+              <p>To guarantee maximum freshness, we roast in small micro-batches twice a week (Tuesdays and Thursdays). Subscriptions and orders placed online are roasted to order and shipped within 24-48 hours of roasting, arriving at your doorstep peak-fresh.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span>Do you offer custom grinding options?</span>
+            <i data-lucide="plus" class="faq-icon"></i>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-content-inner">
+              <p>Yes! We offer a range of grinding styles: Whole Bean, South Indian Filter (Medium-Fine Chicory Blend), French Press (Coarse), Drip (Medium), and Espresso (Very Fine). You can select your preferred grind on any product page before adding it to your cart.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup Section -->
+  <section class="newsletter-signup-section" id="subscribe">
+    <div class="container newsletter-signup-container">
+      <div class="newsletter-card-bg">
+        <span class="newsletter-badge">THE ROASTERS CLUB</span>
+        <h2 class="newsletter-signup-title cormorant-title text-light">Join Our Inner Circle</h2>
+        <p class="newsletter-signup-desc">Subscribe to receive early access to micro-lot harvests, exclusive discounts, invitations to roasting room cuppings, and free home-brewing guides.</p>
+        <form class="newsletter-signup-form" id="newsletter-signup-form-main">
+          <input type="email" placeholder="Enter your email address" required class="newsletter-signup-input" aria-label="Email address for newsletters">
+          <button type="submit" class="btn btn-filled newsletter-signup-btn">SUBSCRIBE NOW</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advanced Premium Footer -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <!-- Column 1: Brand Info -->
+      <div class="footer-col brand-col">
+        <a href="#" class="footer-logo" aria-label="Tamil Nadu-Based Coffee Co. Home">
+          <span class="footer-logo-name">TAMIL NADU-BASED</span>
+          <span class="footer-logo-sub">COFFEE CO.</span>
+        </a>
+        <p class="footer-desc">
+          Crafting exceptional, ethically sourced coffee from the Western Ghats of South India. We roast in micro-batches to unlock the finest sensory profiles.
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">
+            <svg class="social-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg class="social-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg class="social-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg class="social-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: Shop links -->
+      <div class="footer-col">
+        <h4 class="footer-title">SHOP COFFEE</h4>
+        <ul class="footer-links">
+          <li><a href="#">Filter Blends</a></li>
+          <li><a href="#">Single Origins</a></li>
+          <li><a href="#">Nitro Cold Brews</a></li>
+          <li><a href="#">Espresso Special</a></li>
+          <li><a href="#">Sampler Packs</a></li>
+          <li><a href="#">Gift Subscriptions</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Sourcing & Story -->
+      <div class="footer-col">
+        <h4 class="footer-title">OUR HERITAGE</h4>
+        <ul class="footer-links">
+          <li><a href="#">The Roastery</a></li>
+          <li><a href="#">Sourcing Principles</a></li>
+          <li><a href="#">Western Ghats Farms</a></li>
+          <li><a href="#">Sustainability Commitment</a></li>
+          <li><a href="#">Roasting Philosophy</a></li>
+          <li><a href="#">Journal / Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Customer Care & Info -->
+      <div class="footer-col">
+        <h4 class="footer-title">CUSTOMER SERVICES</h4>
+        <ul class="footer-links">
+          <li><a href="#">Brew Guides</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Returns & Exchanges</a></li>
+          <li><a href="#">Manage Subscriptions</a></li>
+          <li><a href="#">FAQ Accordion</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 5: Contact Details & Hours -->
+      <div class="footer-col contact-col">
+        <h4 class="footer-title">THE ROASTERY STORE</h4>
+        <p class="contact-detail"><i data-lucide="map-pin"></i> 14, Chamiers Road, Nandanam, Chennai - 600035, Tamil Nadu</p>
+        <p class="contact-detail"><i data-lucide="phone"></i> +91 44 2435 9900</p>
+        <p class="contact-detail"><i data-lucide="mail"></i> hello@tamilnadubasedcoffee.com</p>
+        <p class="contact-detail"><i data-lucide="clock"></i> Mon - Sun: 7:00 AM - 10:00 PM</p>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright & Badges -->
+    <div class="container footer-bottom">
+      <p class="copyright">&copy; 2026 Tamil Nadu-Based Coffee Co. All rights reserved. Sourced with integrity, roasted with pride.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast for Cart additions -->
+  <div class="notification-toast" id="notification-toast">
+    <span class="notification-message" id="notification-msg">Added to cart!</span>
+  </div>
+
+  <!-- Search Modal Overlay -->
+  <div class="search-overlay" id="search-overlay">
+    <div class="search-box">
+      <button class="search-close-btn" id="search-close" aria-label="Close Search">
+        <i data-lucide="x"></i>
+      </button>
+      <h2 class="search-modal-title">Search Our Store</h2>
+      <div class="search-input-wrapper">
+        <input type="text" placeholder="What blend are you craving today?" class="modal-search-input" id="modal-search-input">
+        <i data-lucide="search" class="modal-search-icon"></i>
+      </div>
+      <div class="search-suggestions">
+        <span class="suggestion-tag">Ethiopia</span>
+        <span class="suggestion-tag">Decaf</span>
+        <span class="suggestion-tag">Supremo</span>
+        <span class="suggestion-tag">House Blend</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
