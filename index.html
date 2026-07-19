@@ -20,7 +20,7 @@
   <!-- Top Announcement Bar & Actions -->
   <div class="top-bar">
     <div class="container top-bar-container">
-      <!-- <div class="announcement">
+      <div class="announcement">
         <div class="announcement-marquee">
           <div class="announcement-track">
             <div class="announcement-group">
@@ -37,7 +37,7 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
       <div class="top-actions">
         <a href="#" class="top-action-link" id="search-trigger" aria-label="Search Collection">
           <i data-lucide="search"></i>
@@ -75,8 +75,34 @@
         </div>
       </a>
 
+      <!-- Hamburger toggle button for offcanvas navbar on mobile -->
+      <button class="menu-toggle-btn" id="menu-toggle-btn" aria-label="Open Navigation Menu">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <!-- Mobile-only actions bar (only visible on small mobile screens) -->
+      <div class="mobile-header-actions">
+        <div class="mobile-search-bar">
+          <input type="text" placeholder="Search..." class="mobile-search-input" id="mobile-search-input" aria-label="Search">
+          <i data-lucide="search" class="mobile-search-icon" id="mobile-search-submit"></i>
+        </div>
+        <div class="mobile-icons">
+          <a href="#" class="mobile-action-link" aria-label="My Account">
+            <i data-lucide="user"></i>
+          </a>
+          <a href="#" class="mobile-action-link" id="mobile-cart-btn" aria-label="Shopping Cart">
+            <i data-lucide="shopping-bag"></i>
+            <span class="mobile-cart-badge" id="mobile-cart-count">0</span>
+          </a>
+        </div>
+      </div>
+
       <!-- Navigation Links -->
       <nav class="navbar" aria-label="Main Navigation">
+        <!-- Close button inside the offcanvas navbar -->
+        <button class="menu-close-btn" id="menu-close-btn" aria-label="Close Navigation Menu">
+          <i data-lucide="x"></i>
+        </button>
         <ul class="nav-links">
           <li><a href="#" class="nav-link active">HOME</a></li>
           <li><a href="#" class="nav-link">SHOP</a></li>
@@ -85,6 +111,9 @@
           <li><a href="#" class="nav-link">CONTACT</a></li>
         </ul>
       </nav>
+      
+      <!-- Offcanvas Backdrop overlay -->
+      <div class="menu-backdrop" id="menu-backdrop"></div>
       
       <!-- Placeholder for spacing header symmetry on desktop -->
       <div class="header-spacer-right"></div>

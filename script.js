@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- 2. Shopping Cart Logic ---
   const cartBtn = document.getElementById('cart-btn');
   const cartCountEl = document.getElementById('cart-count');
+  const mobileCartBtn = document.getElementById('mobile-cart-btn');
+  const mobileCartCountEl = document.getElementById('mobile-cart-count');
   const addToCartBtns = document.querySelectorAll('.add-to-cart');
   let cartCount = 0;
 
@@ -19,20 +21,46 @@ document.addEventListener('DOMContentLoaded', () => {
       
       // Increment Count
       cartCount++;
-      cartCountEl.textContent = cartCount;
+      if (cartCountEl) cartCountEl.textContent = cartCount;
+      if (mobileCartCountEl) mobileCartCountEl.textContent = cartCount;
 
-      // Header Cart Link Micro-animation
-      cartBtn.style.transform = 'scale(1.15)';
-      cartBtn.style.color = '#c89f65';
-      setTimeout(() => {
-        cartBtn.style.transform = 'scale(1)';
-        cartBtn.style.color = '';
-      }, 250);
+      // Header Cart Link Micro-animation (Desktop)
+      if (cartBtn) {
+        cartBtn.style.transform = 'scale(1.15)';
+        cartBtn.style.color = '#c89f65';
+        setTimeout(() => {
+          cartBtn.style.transform = 'scale(1)';
+          cartBtn.style.color = '';
+        }, 250);
+      }
+
+      // Header Cart Link Micro-animation (Mobile)
+      if (mobileCartBtn) {
+        mobileCartBtn.style.transform = 'scale(1.15)';
+        mobileCartBtn.style.color = '#c89f65';
+        setTimeout(() => {
+          mobileCartBtn.style.transform = 'scale(1)';
+          mobileCartBtn.style.color = '';
+        }, 250);
+      }
 
       // Show Toast Notification
       showToast(`Added ${name} to your cart!`);
     });
   });
+
+  if (mobileCartBtn) {
+    mobileCartBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      mobileCartBtn.style.transform = 'scale(1.15)';
+      mobileCartBtn.style.color = '#c89f65';
+      setTimeout(() => {
+        mobileCartBtn.style.transform = 'scale(1)';
+        mobileCartBtn.style.color = '';
+      }, 250);
+      showToast(`Your cart has ${cartCount} items.`);
+    });
+  }
 
   // --- 3. Toast Notifications ---
   const toast = document.getElementById('notification-toast');
@@ -90,6 +118,32 @@ document.addEventListener('DOMContentLoaded', () => {
         showToast(`Searching for: "${query}"...`);
         searchInput.value = '';
       }
+    });
+  }
+
+  // --- 4b. Mobile Search Logic ---
+  const mobileSearchInput = document.getElementById('mobile-search-input');
+  const mobileSearchSubmit = document.getElementById('mobile-search-submit');
+
+  function executeMobileSearch() {
+    if (mobileSearchInput && mobileSearchInput.value.trim() !== '') {
+      const query = mobileSearchInput.value.trim();
+      showToast(`Searching for: "${query}"...`);
+      mobileSearchInput.value = '';
+    }
+  }
+
+  if (mobileSearchInput) {
+    mobileSearchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        executeMobileSearch();
+      }
+    });
+  }
+
+  if (mobileSearchSubmit) {
+    mobileSearchSubmit.addEventListener('click', () => {
+      executeMobileSearch();
     });
   }
 
@@ -264,5 +318,35 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
+
+  // --- 10. Mobile Offcanvas Menu Logic ---
+  const menuToggleBtn = document.getElementById('menu-toggle-btn');
+  const menuCloseBtn = document.getElementById('menu-close-btn');
+  const navbar = document.querySelector('.navbar');
+  const menuBackdrop = document.getElementById('menu-backdrop');
+
+  if (menuToggleBtn && menuCloseBtn && navbar && menuBackdrop) {
+    const openMenu = () => {
+      navbar.classList.add('open');
+      menuBackdrop.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    };
+
+    const closeMenu = () => {
+      navbar.classList.remove('open');
+      menuBackdrop.classList.remove('open');
+      document.body.style.overflow = '';
+    };
+
+    menuToggleBtn.addEventListener('click', openMenu);
+    menuCloseBtn.addEventListener('click', closeMenu);
+    menuBackdrop.addEventListener('click', closeMenu);
+
+    // Also close menu if any navigation link is clicked (e.g. hash navigation)
+    const links = navbar.querySelectorAll('.nav-link');
+    links.forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+  }
 });
 
