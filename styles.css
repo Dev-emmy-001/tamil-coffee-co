@@ -1321,6 +1321,8 @@ button {
     z-index: 101;
   }
 
+
+  
   .menu-toggle-btn i {
     width: 24px;
     height: 24px;
@@ -1337,7 +1339,7 @@ button {
     border-left: 1px solid var(--primary);
     z-index: 1000;
     transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 80px 24px 30px 24px;
     box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
@@ -1346,6 +1348,7 @@ button {
 
   .navbar.open {
     right: 0;
+    display: flex;
   }
 
   /* Close toggle button inside offcanvas */
@@ -1398,6 +1401,7 @@ button {
     z-index: 999;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
+    display: none;
   }
 
   .menu-backdrop.open {
